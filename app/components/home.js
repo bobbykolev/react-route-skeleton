@@ -4,7 +4,7 @@ module.exports = React.createClass({
   render: function () {
     return (
     	<div className="jumbotron">
-      		<h1>Hello world!</h1>
+      		<h1>React rulez!</h1>
     	</div>
     );
   }

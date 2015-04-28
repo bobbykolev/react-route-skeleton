@@ -19,7 +19,6 @@ var development = !(argv.ENV === "production");
 var paths = require('../paths');
 
 gulp.task('bundleTask', function() {
-    console.log("!!!"+paths.main);
     var appBundler = browserify({
         entries: [paths.main], // The entry file, normally "main.js"
         transform: [reactify], // Convert JSX style
@@ -37,7 +36,7 @@ gulp.task('bundleTask', function() {
             .pipe(source('bundle.js'))
             .pipe(gulpif(!development, streamify(uglify())))
             .pipe(gulp.dest(paths.output))
-            //.pipe(gulpif(development, livereload())) // It notifies livereload about a change if you use it
+            .pipe(gulpif(development, livereload())) // It notifies livereload about a change if you use it
             .pipe(notify(function() {
                 console.log('APP bundle built in ' + (Date.now() - start) + 'ms');
         }));
@@ -48,6 +47,7 @@ gulp.task('bundleTask', function() {
     if (development) {
         appBundler = watchify(appBundler);
         appBundler.on('update', rebundle);
+        livereload.listen();
     }
 
     // And trigger the initial bundling
