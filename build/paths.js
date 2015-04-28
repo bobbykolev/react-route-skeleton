@@ -7,8 +7,8 @@ module.exports = {
   root: appRoot,
   vendors: vendors,
   main: appRoot + 'main.js',
-  source: appRoot + '**/*.js',
-  sass: 'css/**/*.scss',
-  css: 'styles/**/*.css',
+  js: appRoot + '**/*.js',
+  sassMain: appRoot + 'css/style.scss',
+  sass: appRoot + 'css/**/*.scss',
   output: './dist/',
 };

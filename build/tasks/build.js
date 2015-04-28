@@ -1,5 +1,5 @@
 var gulp = require('gulp');
 
-gulp.task('build', ['bundleTask'], function () {
+gulp.task('build', ['bundleTask', 'sass'], function () {
 
 });

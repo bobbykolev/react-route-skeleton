@@ -28,6 +28,9 @@
       "vinyl-paths":"*",
       "require-dir":"*",
       "react":"*",
-      "react-router":"*"
+      "react-router":"*",
+      "gulp-sourcemaps":"*",
+      "gulp-ruby-sass": "*",
+      "gulp-autoprefixer":"*"
   }
 }

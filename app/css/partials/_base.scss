@@ -1,0 +1,28 @@
+//variables
+$imgUrl: "../images/";
+$fontUrl: "../fonts/";
+$sprite: $imgUrl + "sprite.png";
+
+//resets
+body, ul, li, ol, dd, dt, h1, h2, h3, h4, h5, h6, table, tr, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    /*border-collapse:collapse;
+    border-spacing:0;*/
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
