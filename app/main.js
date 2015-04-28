@@ -12,17 +12,19 @@ var RouteHandler = Router.RouteHandler;
 var App = React.createClass({
   render: function () {
     return (
-      <div id="wrapper">
-        <header>
-          <ul>
-            <li><Link to="home">Home</Link></li>
-            <li><Link to="login">login</Link></li>
-          </ul>
-          Logged in as Jane
-        </header>
-        <RouteHandler/>
-        <Footer/>
-      </div>
+	<div id="wrapper">
+		<header>
+			<nav id="main-nav">
+				<ul>
+					<li><Link to="home">Home</Link></li>
+					<li><Link to="login">login</Link></li>
+				</ul>
+			</nav>
+			Logged in as Jane
+		</header>
+		<RouteHandler/>
+		<Footer/>
+	</div>
     );
   }
 });

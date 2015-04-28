@@ -3,8 +3,9 @@ var sass = require('gulp-ruby-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var gulpif = require('gulp-if');
-var paths = require('../paths');
 var livereload = require('gulp-livereload');
+var paths = require('../paths');
+
 
 var argv = require('yargs').argv;
 var development = !(argv.ENV === "production");
