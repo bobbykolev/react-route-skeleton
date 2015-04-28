@@ -1,0 +1,33 @@
+{
+  "name": "react-browserfy-setup",
+  "description":"react with browserfy setup",
+  "version": "0.0.1",
+  "main": "app/main.js",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+      "gulp":"*",     
+      "browserify":"*",     
+      "vinyl-source-stream":"*",      
+      "reactify":"*",    
+      "watchify":"*",
+      "yargs":"*",
+      "path":"*",
+      "del":"*",
+      "gulp-if":"*",
+      "gulp-streamify":"*",
+      "gulp-uglify":"*",
+      "gulp-util":"*",
+      "gulp-notify":"*",
+      "gulp-concat":"*",
+      "gulp-cssmin":"*",
+      "gulp-shell":"*",
+      "glob":"*",
+      "gulp-livereload":"*",
+      "gulp-jshint":"*",
+      "vinyl-paths":"*",
+      "require-dir":"*",
+      "react":"*",
+      "react-router":"*"
+  }
+}
