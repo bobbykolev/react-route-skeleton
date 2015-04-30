@@ -10,6 +10,7 @@ you'll need to set up a server and open '/dist/index.html'
 
 you'll also need <a href="https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en" target="_blanl">livereload extension</a> in order to livereload the app on change 
 
+You can see further developed project with Premier League Results <a href="https://github.com/bobbykolev/react-results-app">here</a>
 
 thanks to Rob Eisenberg (aurelia) and christianalfoni for build ideas
 
